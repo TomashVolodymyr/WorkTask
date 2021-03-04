@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="input_data">
+        <div class="input">
+            <input name="name" type="text" placeholder="Full name">
+            <input name="email" type="email" placeholder="email">
+            <input name="age" type="number" placeholder="Age">
+            <button onclick="save()">Send</button>
+        </div>
+    </div>
+    <div class="menage_data">
+        <div class="buttons">
+            <button class="edit">Edit</button>
+            <button class="delete" onclick="deleteRow()">Delete</button>
+            <button class="clean" onclick="cleanAll()">Clean All Storage</button>
+        </div>
+
+        <div class="table">
+            <div class="row row_title">
+                <input type="checkbox" id="check" name="scales" >
+                <div class="col col_title">Full Name</div>
+                <div class="col col_title">email</div>
+                <div class="col col_title">Age</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
